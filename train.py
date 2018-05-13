@@ -260,9 +260,9 @@ def train():
             save(saver, sess, checkpoint_dir, epoch)
             print("[*] Save checkpoints SUCCESS!")
 
-    merged = tf.summary.merge_all()
-    train_writer = tf.summary.FileWriter('d:/text-to-image/logs',
-                                         sess.graph)
+    # merged = tf.summary.merge_all()
+    # train_writer = tf.summary.FileWriter('d:/text-to-image/logs',
+    #                                      sess.graph)
 
 testData = os.path.join('dataset', 'testData.pkl')
 def test():
