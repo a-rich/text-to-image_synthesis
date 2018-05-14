@@ -1,0 +1,20 @@
+INSTRUCTIONS TO RUN
+
+REQUIREMENTS
+- Python 3.6
+- CUDA 9
+
+You must use Python 3.6. When using Python 3.5 with requirements.txt you may see the following error:
+
+OSError: raw write() returned invalid length 2 (should have been between 0 and 1)
+
+This is a known error when using Windows 10 with Python 3.5 
+
+
+To install dependencies run the following command
+pip3 install -r requirements.txt
+
+Once the dependencies have been resolved, run train.py.
+
+All image generated during training get saved in train_samples.
+All checkpoints generated during training get saved in checkpoint.
